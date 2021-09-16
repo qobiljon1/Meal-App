@@ -1,0 +1,60 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  &-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      padding: 10px;
+      margin: 30px 0 30px 0;
+      outline: none;
+      font-size: 18px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    button {
+      padding: 8px;
+      margin-left: 15px;
+      font-size: 18px;
+      color: #fff;
+      border: 1px solid #ccc;
+      background-color: #f3b542;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &-meals {
+    width: 250px;
+    height: 310px;
+    margin: 10px 5px;
+    text-align: center;
+
+    img {
+      width: 220px;
+      border: 1px solid #ccc;
+      transition: all 0.4s;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
